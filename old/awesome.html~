@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="things">
+<select name="">
+<option value="Yes">Volvo</option>
+</select>
+</form>
+
+</body>
+</html>

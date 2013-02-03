@@ -1,0 +1,12 @@
+My personal website
+
+ - Right now there's just some links to my online presence
+ 
+ - In the future there are plans for server file access
+   i.e. serving up content for downloading and streaming
+ 
+ - Before any of that is added, I need to develop a secure
+   php login script that accesses a MySQL database of
+   usernames/passwords. That's still very much a work in
+   progress
+

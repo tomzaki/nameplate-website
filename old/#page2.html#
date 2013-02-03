@@ -1,0 +1,73 @@
+login as: tzaki
+tzaki@64.121.112.21's password:
+Welcome to Ubuntu 11.10 (GNU/Linux 3.0.0-17-generic-pae i686)
+
+ * Documentation:  https://help.ubuntu.com/
+
+New release '12.04 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+*** /dev/sdb5 will be checked for errors at next reboot ***
+
+Last login: Wed Nov 14 03:36:42 2012 from 64-121-112-21.c3-0.smt-ubr1.atw-smt.pa           .cable.rcn.com
+tzaki@pintsize:~$ clear
+tzaki@pintsize:~$ cd public_html/
+tzaki@pintsize:~/public_html$ emacs index.html
+tzaki@pintsize:~/public_html$ emacs awesome.html
+tzaki@pintsize:~/public_html$ emacs awesome.html
+tzaki@pintsize:~/public_html$ emacs page1.html
+tzaki@pintsize:~/public_html$ emacs page1.html
+tzaki@pintsize:~/public_html$ emacs page2.html
+tzaki@pintsize:~/public_html$ emacs page1.html
+File Edit Options Buffers Tools HTML SGML Help
+<!DOCTYPE html>
+<html>
+<body>
+
+<a href="page2.html">page2</a>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-UU-:----F1  page1.html     All L9     (HTML)---------------
