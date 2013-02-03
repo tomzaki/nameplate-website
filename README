@@ -7,7 +7,10 @@ My personal website: http://www.tomzaki.com
    for Firefox, Safari, and IE.
  
  - In the future there are plans for server file access
-   i.e. serving up content for downloading and streaming
+   i.e. serving up content for downloading and streaming.
+   In addition there are plans to develop some simple 
+   web-based electronics design utilities and host them
+   as well. 
  
  - Before any of the file sharing stuff is added, I need 
    to develop a secure php login script (possibly tapping
@@ -16,4 +19,4 @@ My personal website: http://www.tomzaki.com
  - The login script is still very much a work in progress.
    Look for updates in my test-code-website repo.
    
-
+ 
