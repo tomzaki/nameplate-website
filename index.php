@@ -4,7 +4,8 @@
    <head>
       <meta http-equiv="content-type" content="text/html; charset=utf-8">
       
-      <meta content="hello world." name="description">
+      <meta name="description" content="hello world.">
+      <meta name="keywords" content="Tom, Thomas, Zaki, facebook, last.fm, reddit, github, git, linkedin, lehigh, university"> 
       <title>Tom Zaki</title>
       <link rel="stylesheet" href="css/style_res_index.css" type="text/css" media="screen">
       <link rel="icon" href="favicon.ico">      
@@ -12,7 +13,7 @@
       <!--Konami Code-->
       <script type="text/javascript" src="https://raw.github.com/snaptortoise/konami-js/master/konami.js"></script>
       <script type="text/javascript">
-         var konami = new Konami('http://64.121.112.21:8082/~public');  
+         var konami = new Konami('http://tomzaki.com/~public');  
       </script>
       
    </head>

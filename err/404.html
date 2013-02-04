@@ -15,16 +15,16 @@
       <script type="text/javascript">
          function insertURL(){
             var url = window.location.href.toString();
-            document.getElementById('page_url').innerHTML = " (" + url + ") ";
+            document.getElementById('page_url').innerHTML = "<br>" + url + "<br>";
          }
       </script>
       
    </head>
    
-   <body> <!--OPTIONAL: onload="insertURL()"-->
+   <body onload="insertURL()">
       <div class="content">
-         Hmm, looks like this page<span id='page_url'> </span>doesnt exist.<br><br>
-         We'll take you back to <span style="color: #159">tomzaki.com</span> in just a few seconds...
+         Hmm, looks like the page<span id='page_url' style="color: #159"> </span>does not exist.<br><br>
+         We'll take you back to <span style="color: #159">tomzaki.com</span><br>in just a few seconds...
       </div>    
    </body>
    
