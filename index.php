@@ -13,7 +13,7 @@
       <!--Konami Code-->
       <script type="text/javascript" src="https://raw.github.com/snaptortoise/konami-js/master/konami.js"></script>
       <script type="text/javascript">
-         var konami = new Konami('http://tomzaki.com/~public');  
+         var konami = new Konami('http://download.tomzaki.com/');  
       </script>
       
    </head>
