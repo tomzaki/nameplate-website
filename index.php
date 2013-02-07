@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+<?php include("inc/bpphp.php"); ?>
+
 <html lang="en">
    <head>
       <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -13,7 +15,7 @@
       <!--Konami Code-->
       <script type="text/javascript" src="https://raw.github.com/snaptortoise/konami-js/master/konami.js"></script>
       <script type="text/javascript">
-         var konami = new Konami('http://download.tomzaki.com/');  
+         var konami = new Konami('login.php');  
       </script>
       
    </head>
