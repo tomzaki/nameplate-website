@@ -36,15 +36,16 @@
                $series_id = $_COOKIE['logindata']['series_id'];
                $token     = $_COOKIE['logindata']['token'];
                
-               echo("username: $username<br>".
-                    "series_id: $series_id<br>".
-                    "token: $token<br><br>");
+               //$$$debug
+               //echo("username: $username<br>".
+               //     "series_id: $series_id<br>".
+               //     "token: $token<br><br>");
                
                $sql = "SELECT id FROM members WHERE 
                        username  = '$username' AND
                        series_id = '$series_id' AND
                        token     = '$token'";
-               $result = mysql_query($sql) or die("oops".mysql_error());
+               $result = mysql_query($sql) or die(mysql_error());
             
                if(mysql_num_rows($result) == 1) {
                
@@ -75,13 +76,13 @@
                   //delete cookie
                   setcookie('logindata', '', time()-3600);
                   //print error
-                  echo("<span style='color: #993300;'>Bad login cookie.</span> Please log in:");
+                  echo("<span style='color: red;'>Bad login cookie.</span> Please log in:");
                }
                
             } else if (isset($_POST["username"]) && isset($_POST["password"])){ 
                
                if ((!ereg("^[A-Za-z0-9]", $_POST['username'])) || (strlen($_POST['username']) < 4)) {
-                  echo("<span style='color: #993300;'>Invalid username. Try again.</span>");               
+                  echo("Invalid username. Try again.");               
                } else {
                   
                   //database variables for login
@@ -128,7 +129,7 @@
                      // $$$ - todo: make mailer function to simplify sending emails
                   } else {
                      //username and password don't match in database
-                     echo("<span style='color: #993300;'>Username and Password do not match. Try again.</span>");
+                     echo("Username and Password do not match. Try again.");
                   }
                }
             } else {

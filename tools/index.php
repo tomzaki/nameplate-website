@@ -15,21 +15,24 @@
 
    <body>
       <?php $pagetitle="Tools"; include($webroot."inc/bpheader.php"); ?>
-      <?php //$$$ - TODO: recall this data from a database ?>
-      <div class="content">
+      <div class="content">         
          <h2>Electrical Engineering Design Tools</h2><br>
-            <h3><a href="resistorgaincalc.php">Resistor Gain Tool</a></h3><br>     
-            <p>
-               Helps determine the best ratio of
-               <a href="http://en.wikipedia.org/wiki/Preferred_number#E_series">standard-valued</a>
-               resistors for achieving a desired gain. Takes into account a variety of helpful
-               user-specified constraits.   
-               <br><br>
-               <i>Note: There is a known sorting bug in this applicaiton. The results are first sorted by
-               &Delta; and then by R1. The sorting is </i>almost<i> perfect, but for some reason
-               the last item in the list is always out of place. As far as I can tell this is a
-               bug with php5's usort function and not my &Delta; comparison function.</i>
-            </p><br><br>
+         <?php 
+            //database variables for login
+            include($webroot."cfg/mySQLconfig.php");
+            //connect to the MySQL server
+            mysql_connect($mySQL_loc, $mySQL_usr, $mySQL_pwd) or die(mysql_error());
+            //select database
+            mysql_select_db($mySQL_db) or die(mysql_error());
+            
+            $table_data = mysql_query("SELECT * FROM eetools")
+                          or die(mysql_error());
+            
+            while($row_data = mysql_fetch_array($table_data)){
+               echo("<h3><a href='".$row_data['url']."'>".$row_data['name']."</a></h3><br>".
+                    "<p>".$row_data['desc']."</p><br><br>");
+            } 
+         ?>
       </div>      
       <?php include($webroot."inc/bpfooter.php");?>
    </body>
