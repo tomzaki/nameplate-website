@@ -9,6 +9,6 @@
    $expire_time = time()+900;
    if (isset($_COOKIE['loginexpire'])) {   
       //reset cookie due to activity
-      setcookie('loginexpire', date("G:i - d/m/y", $expire_time), $expire_time);
+      setcookie('loginexpire', date("G:i a", $expire_time), $expire_time);
    }
 ?>

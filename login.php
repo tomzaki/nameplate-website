@@ -103,9 +103,10 @@
                      //success, update session and redirect to members only
                      $salt = date("F"); // use full month string as salt                     
                      $_SESSION['loggedin'] = hash("sha256",$username.$password.$salt); 
+                     $_SESSION['username'] = $username; 
                      
                      //Log out after 15 minutes with no activity 
-                     setcookie('loginexpire', date("G:i - d/m/y", $expire_time), $expire_time);    
+                     setcookie('loginexpire', date("G:i a", $expire_time), $expire_time);    
                      
                      //create cookie to verify for auto-login if "Keep me logged in" is checked
                      if($remember) {
@@ -145,6 +146,6 @@
          <br><br>
          <p><a href="register.php">Register</a> to create an account.</p>
       </div>      
-      <?php include("inc/bpfooter.php");?>
+      <?php include($webroot."inc/bpfooter.php");?>
    </body>
 </html>

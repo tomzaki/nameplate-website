@@ -1,3 +1,12 @@
 User-agent: *
 Disallow: /~public 
 Disallow: /~webserver
+Disallow: /cfg
+Disallow: /css
+Disallow: /img
+Disallow: /err
+Disallow: /inc
+Disallow: /members
+Disallow: /mysql
+Disallow: /old
+Disallow: /tools
