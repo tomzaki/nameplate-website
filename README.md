@@ -28,5 +28,10 @@ About
 TODO:
 -----
 
+ - Fix bug that causes "bad login cookie" for returning users.
+   This bug is likely due to the recently changed checklogin.php
+   code which now allows for returning users to automatically be
+   logged in from any members-restricted page.
+
  - Add login page from test code once it's complete to
    avoid having to use http basic auth
